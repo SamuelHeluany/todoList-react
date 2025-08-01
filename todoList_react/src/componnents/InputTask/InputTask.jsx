@@ -4,7 +4,7 @@ const InputTask = () => {
   return (
     <div className="inputTask">
           <input type="text" name="taskName"  />
-          <button>Enviar</button>
+          <button>ADD</button>
         </div>
   )
 }
