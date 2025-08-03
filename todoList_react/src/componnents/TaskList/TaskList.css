@@ -1,5 +1,28 @@
 .taskList {
     margin-top: 2rem;
-    
+    margin-left: 2.5rem;
 }
 
+.taskList ul{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.taskList ul li{
+    display: flex;
+    align-items: center;
+
+    width: 45rem;
+    height: 4rem;
+    margin-top: .5rem;
+    padding-left: 1rem;
+    
+    border-radius: 1rem;
+
+    list-style: none;
+    font-size: 1.7rem;
+
+    background-color: #EDEEF0;
+    
+}
