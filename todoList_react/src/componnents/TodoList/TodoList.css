@@ -1,10 +1,16 @@
+.todoList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
 .inputTask {
     display: flex;
     justify-content: center;
-    width: 50rem;
+    align-items: center;
 }
 
-.inputTask input {
+.todoList input {
     height: 5rem;
     width: 35rem;
     font-size: 2.3rem;
@@ -20,7 +26,7 @@
 }
 
 
-.inputTask button { 
+.addButton { 
     height: 5rem;
     width: 10rem;
     margin-top: 2rem;
@@ -34,7 +40,29 @@
     cursor: pointer;
 }   
 
-.inputTask button:hover { 
+.todoList button:hover { 
     opacity: .9;
 }
 
+.listTask {
+
+}
+
+.listTask ul {
+    width: 47.5rem;
+    padding-bottom: 1rem;
+}
+
+.listTask ul li{
+    display: flex;
+    align-items: center;
+
+    height: 4rem;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+
+    background-color: #EDEEF0 ;
+    list-style: none;
+}

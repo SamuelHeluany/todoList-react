@@ -1,16 +1,15 @@
 import './App.css'
-import InputTask from './componnents/InputTask/InputTask'
-import { TaskList } from './componnents/TaskList/TaskList'
+import TodoList from './componnents/TodoList/TodoList'
+
+
 
 function App() {
 
   return (
     <>
-      
       <div className="container">
         <h1>Todo List</h1>
-        <InputTask />
-        <TaskList />
+        <TodoList />
       </div>
     </>
   )

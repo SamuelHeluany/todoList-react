@@ -9,5 +9,9 @@
 
     background-color: white;
 
-    position: initial;
+}
+
+.container h1 {
+    display: flex;
+    justify-content: center;
 }
