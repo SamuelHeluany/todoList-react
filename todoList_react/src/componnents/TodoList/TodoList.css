@@ -44,10 +44,6 @@
     opacity: .9;
 }
 
-.listTask {
-
-}
-
 .listTask ul {
     width: 47.5rem;
     padding-bottom: 1rem;
@@ -65,4 +61,27 @@
 
     background-color: #EDEEF0 ;
     list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.listTask ul li button {
+    background-color: transparent;
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.listTask ul li button:hover {
+    opacity: .7;
+}
+
+
+.listTask ul li button img {
+    width: 2rem;
+    height: 2rem;
 }
