@@ -14,7 +14,6 @@ const TodoList = () => {
       alert('Digite o nome da tarefa')
     }
     setTaskName('')
-    console.log(taskList)
   }
 
   const handleKeyDown = ({ key }) => {
@@ -56,11 +55,11 @@ const TodoList = () => {
         <ul>
           {taskList.map((task, index) => (
             <li key={index}>{task}
-            <div className='buttonActions'>
-              <button onClick={() => editTaskName(index)}><img src={Edit} /></button>
-              <button onClick={() => deleteTask(index)}><img src={Trash} /></button>
-            </div>
-              </li>
+              <div className='buttonActions'>
+                <button onClick={() => editTaskName(index)}><img src={Edit} /></button>
+                <button onClick={() => deleteTask(index)}><img src={Trash} /></button>
+              </div>
+            </li>
           ))}
         </ul>
       </div>
