@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './TodoList.css'
-import Trash from '../../assets/Trash.svg'
+import Trash from '../../assets/trash.svg'
+import Edit from '../../assets/edit.svg'
 
 const TodoList = () => {
   const [taskName, setTaskName] = useState('')
@@ -55,8 +56,11 @@ const TodoList = () => {
         <ul>
           {taskList.map((task, index) => (
             <li key={index}>{task}
-              <button onClick={() => editTaskName(index)}><img src={Trash} /></button>
-              <button onClick={() => deleteTask(index)}><img src={Trash} /></button></li>
+            <div className='buttonActions'>
+              <button onClick={() => editTaskName(index)}><img src={Edit} /></button>
+              <button onClick={() => deleteTask(index)}><img src={Trash} /></button>
+            </div>
+              </li>
           ))}
         </ul>
       </div>

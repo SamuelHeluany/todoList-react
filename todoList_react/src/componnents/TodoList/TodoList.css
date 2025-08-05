@@ -71,6 +71,7 @@
 
 .listTask ul li button {
     background-color: transparent;
+    margin-top: .5rem;
     border: none;
     margin-right: 1rem;
     cursor: pointer;
